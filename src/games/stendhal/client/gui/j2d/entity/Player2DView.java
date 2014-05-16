@@ -203,10 +203,10 @@ class Player2DView<T extends Player> extends RPEntity2DView<T> {
 				list.add(ActionType.IGNORE.getRepresentation());
 			}
 			String serverVersion = User.getServerRelease();
-			if ((serverVersion == null) || (Version.compare(serverVersion, "0.87") > 0)) {
+			if ((serverVersion == null) || (Version.compare(serverVersion, "0.52") > 0)) {
 				list.add(ActionType.TRADE.getRepresentation());
 			}
-			if ((serverVersion == null) || (Version.compare(serverVersion, "0.92") > 0)) {
+			if ((serverVersion == null) || (Version.compare(serverVersion, "0.52") > 0)) {
 				list.add(ActionType.INVITE.getRepresentation());
 			}
 		}
