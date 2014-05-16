@@ -64,6 +64,7 @@ public class StendhalQuestSystem {
 	 */
 	public void init() {
 
+		loadQuest(new Premium());
 		loadQuest(new AdosDeathmatch());
 		loadQuest(new AmazonPrincess());
 		//loadQuest(new AntivenomRing());

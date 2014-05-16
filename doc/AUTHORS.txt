@@ -1,6 +1,13 @@
 ﻿related wiki page link:
 http://stendhalgame.org/wiki/ArianneAuthors
 
+Authors of Archestica are:
+- Kasgel
+  · Project founder
+  · Project leader
+  · Coder
+  · Server Admin
+
 Authors of Stendhal are:
 
 - Miguel Angel Blanch Lardin

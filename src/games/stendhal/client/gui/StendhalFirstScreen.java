@@ -151,7 +151,7 @@ public class StendhalFirstScreen extends JFrame {
 		Action helpAction = new AbstractAction("Help") {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				BareBonesBrowserLaunch.openURL("http://stendhalgame.org/wiki/Stendhal_Manual");
+				BareBonesBrowserLaunch.openURL("http://archestica.net/manual");
 			}
 		};
 		helpAction.putValue(Action.MNEMONIC_KEY, KeyEvent.VK_H);
@@ -212,7 +212,7 @@ public class StendhalFirstScreen extends JFrame {
 		// LoginGUI
 		//
 		setTitle(gameName + " " + stendhal.VERSION
-				+ " - a multiplayer online game using Arianne");
+				+ " - an online multiplayer RPG game");
 
 		url = DataLoader.getResource(ClientGameConfiguration.get("GAME_ICON"));
 		this.setIconImage(new ImageIcon(url).getImage());

@@ -40,10 +40,10 @@ public final class ShopList {
 
 		shops.add("buyfood", "cheese", 5);
 		shops.add("buyfood", "meat", 10);
-		shops.add("buyfood", "spinach", 15);
-		shops.add("buyfood", "ham", 20);
+		shops.add("buyfood", "spinach", 10);
+		shops.add("buyfood", "ham", 15);
 		shops.add("buyfood", "flour", 25);
-		shops.add("buyfood", "porcini", 30);
+		shops.add("buyfood", "porcini", 25);
 
 		shops.add("healing", "antidote", 50);
 		shops.add("healing", "minor potion", 100);

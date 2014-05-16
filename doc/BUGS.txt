@@ -1,5 +1,4 @@
-Please refer bugs to http://sourceforge.net/tracker/?group_id=1111&atid=101111
-Make sure that the bug isn't fixed in CVS.
+Please report all bugs to bugs at archestica dot net
 
-Thanks,
-Miguel
+Sincerely,
+the Sourceress Project

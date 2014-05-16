@@ -617,14 +617,14 @@
 		<mkdir dir="${buildroot}/stendhal-${version}/lib"/>
 		<mkdir dir="${buildroot}/stendhal-${version}/log"/>
 
-		<copy tofile="${buildroot}/stendhal-${version}/stendhal-starter.jar" file="${lib}/${client_starter_jarname}"/>
-		<copy tofile="${buildroot}/stendhal-${version}/lib/stendhal.jar" file="${lib}/${client_jarname}"/>
+		<copy tofile="${buildroot}/stendhal-${version}/archestica-starter.jar" file="${lib}/${client_starter_jarname}"/>
+		<copy tofile="${buildroot}/stendhal-${version}/lib/archestica.jar" file="${lib}/${client_jarname}"/>
 		<copy tofile="${buildroot}/stendhal-${version}/lib/log4j.jar" file="${log4j_jar}"/>
 		<copy tofile="${buildroot}/stendhal-${version}/lib/marauroa.jar" file="${marauroa_jar}"/>
 		<copy tofile="${buildroot}/stendhal-${version}/lib/jorbis.jar" file="${jorbis_jar}"/>
-		<copy tofile="${buildroot}/stendhal-${version}/lib/stendhal-sound-data.jar" file="${lib}/${client_sound_data}"/>
-		<copy tofile="${buildroot}/stendhal-${version}/lib/stendhal-music-data.jar" file="${lib}/${client_music_data}"/>
-		<copy tofile="${buildroot}/stendhal-${version}/lib/stendhal-data.jar" file="${lib}/${client_data}"/>
+		<copy tofile="${buildroot}/stendhal-${version}/lib/archestica-sound-data.jar" file="${lib}/${client_sound_data}"/>
+		<copy tofile="${buildroot}/stendhal-${version}/lib/archestica-music-data.jar" file="${lib}/${client_music_data}"/>
+		<copy tofile="${buildroot}/stendhal-${version}/lib/archestica-data.jar" file="${lib}/${client_data}"/>
 		<copy todir="${buildroot}/stendhal-${version}/lib">
 			<fileset dir="libs">
 				<include name="*.txt"/>
@@ -635,7 +635,7 @@
 			<fileset dir="doc"/>
 			<fileset dir="." includes="LICENSE.txt"/>
 		</copy>
-		<touch file="${buildroot}/stendhal-${version}/log/stendhal.txt" />
+		<touch file="${buildroot}/stendhal-${version}/log/archestica.txt" />
 		<copy todir="${buildroot}/stendhal-${version}" file="README.txt"/>
 		<copy todir="${buildroot}/stendhal-${version}" file=".hotspotrc"/>
 		<copy todir="${buildroot}/stendhal-${version}" file="icon.ico"/>

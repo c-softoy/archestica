@@ -43,7 +43,7 @@ class GMHelpAction implements SlashAction {
 	    List<String> lines;
 		if (params[0] == null) {
 			lines = Arrays.asList(
-				"For a detailed reference, visit #http://stendhalgame.org/wiki/Stendhal:Administration",
+				"For a detailed reference, visit #http://archestica.net/administration",
 				"Here are the most-used GM commands:",
 				"- /gmhelp [alter|script|support]  \t for more info about alter, script or the supportanswer shortcuts", 
 				"- /supportanswer <player> <message> \t Replies to a support question. Replace <message> with $faq, $faqsocial, $ignore, $faqpvp, $wiki, $knownbug, $bugstracker, $rules, $notsupport or $spam shortcuts if desired.",

@@ -57,7 +57,7 @@ public class StyleFactory {
 	 * Available style definitions.
 	 */
 	private static enum StyleDefinition {
-		WOOD("Wood (default)") {
+		WOOD("Wood") {
 			@Override
 			Style create() {
 				return new PixmapStyle("data/gui/panelwood119.jpg", true,
@@ -186,7 +186,7 @@ public class StyleFactory {
 			}
 		},
 		
-		TILE_AQUA("Tile Aqua") {
+		TILE_AQUA("Tile Aqua (default)") {
 			@Override
 			Style create() {
 				// Text
@@ -247,7 +247,7 @@ public class StyleFactory {
 			
 			logger.warn("Style '" + name + "'not found. Using the default.");
 			
-			return WOOD;
+			return TILE_AQUA;
 		}
 	}
 }

@@ -144,8 +144,8 @@ public class Bootstrap {
 		// add the files in the download distribution at the end of the classpath
 		ClassLoader orgClassloader = Bootstrap.class.getClassLoader();
 		String[] includedJarFiles = new String[] { "lib/log4j.jar", "lib/marauroa.jar", "lib/jorbis.jar",
-				"lib/stendhal.jar", "lib/stendhal-data.jar", "lib/stendhal-sound-data.jar",
-				"lib/stendhal-music-data.jar"};
+				"lib/archestica.jar", "lib/archestica-data.jar", "lib/archestica-sound-data.jar",
+				"lib/archestica-music-data.jar"};
 		for (String includedJarFile : includedJarFiles) {
 			URL url = orgClassloader.getResource(includedJarFile);
 			if (url != null) {
