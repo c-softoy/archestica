@@ -605,7 +605,7 @@
 		<copy todir="${buildroot}/stendhal-server-${version}" file="README.txt"/>
 		<mkdir dir="${buildroot}/stendhal-server-${version}/log" />
 		<touch file="${buildroot}/stendhal-server-${version}/log/empty" />
-		<zip destfile="${buildroot}/stendhal-server-${version}.zip">
+		<zip destfile="${buildroot}/archestica-server-${version}.zip">
 			<zipfileset dir="${buildroot}/stendhal-server-${version}" excludes="${server_jarname}"/>
 			<zipfileset dir="${buildroot}/stendhal-server-${version}" includes="${server_jarname}" filemode="755"/>
 		</zip>
@@ -639,7 +639,7 @@
 		<copy todir="${buildroot}/stendhal-${version}" file="README.txt"/>
 		<copy todir="${buildroot}/stendhal-${version}" file=".hotspotrc"/>
 		<copy todir="${buildroot}/stendhal-${version}" file="icon.ico"/>
-		<zip destfile="${buildroot}/stendhal-${version}.zip">
+		<zip destfile="${buildroot}/archestica-${version}.zip">
 			<zipfileset dir="${buildroot}/stendhal-${version}" excludes="stendhal-starter.jar"/>
 			<zipfileset dir="${buildroot}/stendhal-${version}" includes="stendhal-starter.jar" filemode="755"/>
 		</zip>
@@ -720,7 +720,7 @@
 			<fileset dir="." includes="LICENSE.txt"/>
 		</copy>
 
-		<tar destfile="${buildroot}/stendhal-${version}-src.tar.gz" compression="gzip" longfile="gnu">
+		<tar destfile="${buildroot}/archestica-${version}-src.tar.gz" compression="gzip" longfile="gnu">
 			<tarfileset dir="${buildroot}/stendhal-${version}-src" prefix="stendhal-${version}">
 				<exclude name="**/CVS/**"/>
 			</tarfileset>
@@ -845,38 +845,38 @@
 				<exclude name="*.zip"/>
 			</fileset>
 		</delete>
-		<unzip src="${build-archive}/stendhal-${version.old}.zip" dest="${build-archive}" />
+		<unzip src="${build-archive}/archestica-${version.old}.zip" dest="${build-archive}" />
 		<java jar="libs/jardiff.jar" fork="true">
 			<arg value="-nonminimal" />
 			<arg value="-creatediff" />
 			<arg value="-output" />
-			<arg value="${build}/lib/stendhal-diff-${version.old}-${version}.jar" />
-			<arg value="${build-archive}/lib/stendhal.jar" />
-			<arg value="${build}/lib/stendhal-${version}.jar" />
+			<arg value="${build}/lib/archestica-diff-${version.old}-${version}.jar" />
+			<arg value="${build-archive}/lib/archestica.jar" />
+			<arg value="${build}/lib/archestica-${version}.jar" />
 		</java>
 		<java jar="libs/jardiff.jar" fork="true">
 			<arg value="-nonminimal" />
 			<arg value="-creatediff" />
 			<arg value="-output" />
-			<arg value="${build}/lib/stendhal-data-diff-${version.old}-${version}.jar" />
-			<arg value="${build-archive}/lib/stendhal-data.jar" />
-			<arg value="${build}/lib/stendhal-data-${version}.jar" />
+			<arg value="${build}/lib/archestica-data-diff-${version.old}-${version}.jar" />
+			<arg value="${build-archive}/lib/archestica-data.jar" />
+			<arg value="${build}/lib/archestica-data-${version}.jar" />
 		</java>
 		<java jar="libs/jardiff.jar" fork="true">
 			<arg value="-nonminimal" />
 			<arg value="-creatediff" />
 			<arg value="-output" />
-			<arg value="${build}/lib/stendhal-music-data-diff-${version.old}-${version}.jar" />
-			<arg value="${build-archive}/lib/stendhal-music-data.jar" />
-			<arg value="${build}/lib/stendhal-music-data-${version}.jar" />
+			<arg value="${build}/lib/archestica-music-data-diff-${version.old}-${version}.jar" />
+			<arg value="${build-archive}/lib/archestica-music-data.jar" />
+			<arg value="${build}/lib/archestica-music-data-${version}.jar" />
 		</java>
 		<java jar="libs/jardiff.jar" fork="true">
 			<arg value="-nonminimal" />
 			<arg value="-creatediff" />
 			<arg value="-output" />
-			<arg value="${build}/lib/stendhal-sound-data-diff-${version.old}-${version}.jar" />
-			<arg value="${build-archive}/lib/stendhal-sound-data.jar" />
-			<arg value="${build}/lib/stendhal-sound-data-${version}.jar" />
+			<arg value="${build}/lib/archestica-sound-data-diff-${version.old}-${version}.jar" />
+			<arg value="${build-archive}/lib/archestica-sound-data.jar" />
+			<arg value="${build}/lib/archestica-sound-data-${version}.jar" />
 		</java>
 	<!-- TODO maraurora.jar-->
 	</target>

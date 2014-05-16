@@ -43,7 +43,7 @@ public class WellSource extends PlayerActivityEntity {
 	/**
 	 * The chance that wishing is successful.
 	 */
-	private static final double FINDING_PROBABILITY = 0.5;
+	private static final double FINDING_PROBABILITY = 0.15;
 
 	/**
 	 * How long it takes to wish at a well (in seconds). 
