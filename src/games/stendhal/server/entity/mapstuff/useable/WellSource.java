@@ -38,12 +38,12 @@ public class WellSource extends PlayerActivityEntity {
 	private static final String[] items = { "money", "wood", "iron ore",
 			"gold nugget", "potion", "home scroll", "greater potion",
 			"sapphire", "carbuncle", "horned golden helmet", "dark dagger",
-			"present" };
+			"present", "ados city scroll" };
 	
 	/**
 	 * The chance that wishing is successful.
 	 */
-	private static final double FINDING_PROBABILITY = 0.15;
+	private static final double FINDING_PROBABILITY = 0.10;
 
 	/**
 	 * How long it takes to wish at a well (in seconds). 
