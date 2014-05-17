@@ -20,7 +20,7 @@ package games.stendhal.server.core.events;
 public enum TutorialEventType {
 
 	FIRST_LOGIN(
-			"Hi, welcome to Stendhal. You can move around using the arrow keys or by clicking the mouse."),
+			"Hi, welcome to Archestica. You can move around using the arrow keys or by clicking the mouse."),
 	FIRST_MOVE(
 			"You can talk to Hayunn Naratha by saying \"hi\"."),
 	RETURN_GUARDHOUSE(
@@ -60,7 +60,7 @@ public enum TutorialEventType {
 	TIMED_OUTFIT(
 			"Do you like your outfit? If not, you can change it. Right click on yourself and choose \"Set Outfit\" to experiment with new hair, face, clothes and body."),
 	TIMED_RULES(
-			"Thank you for continuing to play Stendhal. Now that you have played for some time, it's important that you read the rules, please type #/rules and they will open in a browser.");
+			"Thank you for continuing to play Archestica. Now that you have played for some time, it's important that you read the rules, please type #/rules and they will open in a browser.");
 	private String message;
 
 	/**

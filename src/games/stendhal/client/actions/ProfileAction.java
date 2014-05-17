@@ -33,7 +33,7 @@ class ProfileAction implements SlashAction{
 	 */
 	@Override
 	public boolean execute(final String[] params, final String remainder) {
-		String url = "https://stendhalgame.org/character/";
+		String url = "https://archestica.net/?id=content/scripts/character&name=";
 		String name = null;
 		if ((params.length > 0) && (params[0] != null)) {
 			name = params[0];
@@ -43,7 +43,7 @@ class ProfileAction implements SlashAction{
 				return true;
 			}
 		}
-		url = url + name + ".html";
+		url = url + name + "&exact";
 		ClientSingletonRepository.getUserInterface().addEventLine(new HeaderLessEventLine(
 				"Trying to open #" + url + " in your browser.",
 		NotificationType.CLIENT));
